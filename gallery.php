@@ -24,9 +24,9 @@
             <span class="bordered-icon" style='color: #000;'><i class="fa fa-circle-thin"></i></span>
         </div>
     </section>
-	<center>
-	<?php include("gallery-include.php"); ?>
-	</center>
+	<!-- <center>
+	<?php  //include("gallery-include.php"); ?>
+	</center> -->
 </section>
 <!-- .about-text-->
 

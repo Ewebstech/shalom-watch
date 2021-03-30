@@ -243,11 +243,11 @@
                 top: 0px; left: 0px;width: 100%;height:100%;">
             </div>
         </div>
-		<?php $vp = mysql_query("select * from items where itemtype='gallery' and status='show' order by time desc"); ?>
+		<?php $vp = mysqli_query($conn, "select * from items where itemtype='gallery' and status='show' order by time desc"); ?>
         <!-- Slides Container -->
         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 400px;
             overflow: hidden;">
-			<?php while($gallery = mysql_fetch_assoc($vp)){  ?>
+			<?php while($gallery = mysqli_fetch_assoc($conn, $vp)){  ?>
             <div>
                 <a u=image href="#"><img src="<?php echo $gallery["imageurl"]; ?>" /></a>
                 <div u=caption t="*" class="captionOrange"  style="position:absolute; left:220px; top: 10px; width:350px; height: 70px;"> 
